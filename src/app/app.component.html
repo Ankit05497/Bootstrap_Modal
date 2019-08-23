@@ -1,0 +1,17 @@
+<div class="container jumbotron border border-primary">
+  <div class="float-right clearfix bottom-space">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#formModal" (click)="clickHandler()"> Create </button>
+  </div>
+  <div class="border border-secondary clear-float bottom-space inner-space" *ngFor="let data of submittedValues;index as i">
+    <div class="border border-secondary bottom-space inner-space" (click)="toggleHandler(i)">{{data?.name}}</div>
+    <div class="information-container border border-info bottom-space inner-space" [hidden]="toggleDiv[i]"> 
+      <p><span class="font-weight-bold">Name: </span>{{data?.name}}</p>
+      <p><span class="font-weight-bold">Email: </span>{{data?.email}}</p>
+      <p><span class="font-weight-bold">Contact Number: </span>{{data?.phoneExtension}} {{data?.phoneNumber}}</p>
+      <p><span class="font-weight-bold">Company: </span>{{data?.comapny}}</p>
+      <p><span class="font-weight-bold">Role: </span>{{data?.role}}</p>
+      <p><span class="font-weight-bold">Address: </span>{{data?.address}}</p>
+      <p><span class="font-weight-bold">Salary: </span>{{data?.salary}}</p>
+    </div>
+  </div>
+</div>

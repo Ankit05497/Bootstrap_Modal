@@ -1,0 +1,13 @@
+p {
+  font-family: Lato;
+}
+.bottom-space {
+  margin-bottom: 30px;
+}
+.clear-float {
+  clear: both;
+}
+
+.inner-space {
+  padding: 10px;
+}
